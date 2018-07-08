@@ -64,8 +64,8 @@ namespace Engine
 		float z = temp.Dot(GetViewForward() * -1);
 
 		return *(new Vector3(
-			(1080 / 2) * (1 + x / GetViewFovX() / z),
-			(1920 / 2) * (1 - y / GetViewFovY() / z),
+			(1920 / 2) * (1 + x / GetViewFovX() / z),
+			(1080 / 2) * (1 - y / GetViewFovY() / z),
 			z));
 	}
 }
